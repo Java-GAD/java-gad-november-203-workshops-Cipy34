@@ -1,13 +1,14 @@
 public class Main {
     public static void printHallowPattern(int lin, int col){
-        for(var i = 1; i <= lin; i++){
-            for(var j = 1; j <= col; j++){
-                if(i == 1 || j == 1 || i == lin || j == col)
-                    System.out.printf("*");
+        for(int i = 1; i <= lin; i++){
+            for(int j = 1; j <= col; j++) {
+                if (i == 1 || j == 1 || i == lin || j == col)
+                    System.out.print("*");
                 else
-                    System.out.printf(" ");
+                    System.out.print(" ");
+            System.out.print(" ");
             }
-            System.out.printf("\n");
+            System.out.print("\n");
         }
     }
     public static void main(String[] args) {
